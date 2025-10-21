@@ -24,9 +24,12 @@ p:last-of-type {
     margin-top: 2rem;
     font-style: italic;
 }
-img {
-    max-width: 100%;
+.project img {
+    max-width: 400px;
+    width: 100%;
     height: auto;
     display: block;
     margin: 1rem auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
 }
