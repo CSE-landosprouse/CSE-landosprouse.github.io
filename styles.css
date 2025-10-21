@@ -24,3 +24,9 @@ p:last-of-type {
     margin-top: 2rem;
     font-style: italic;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
