@@ -25,19 +25,24 @@ p:last-of-type {
     font-style: italic;
 }
 .project img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
+    width: 90%;              /* responsive width */
+    max-width: 600px;        /* keeps from stretching too large */
+    height: auto;            /* keeps proportions */
     display: block;
-    margin: 1rem auto;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    margin: 1.5rem auto;     /* centers image */
+    border: 2px solid rgb(126, 14, 201); /* your color */
+    border-radius: 12px;     /* smooth corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
-.project img{
-width: 300px;
-height: 300px;
-margin: 10px;
-border: 2px solid rgb(126, 14, 201); /* choose a color */
-display: block;
-margin: auto;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /* space between cards */
+}
+
+.project {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
 }
