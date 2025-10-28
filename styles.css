@@ -33,3 +33,11 @@ p:last-of-type {
     border: 2px solid #ccc;
     border-radius: 8px;
 }
+.project img{
+width: 300px;
+height: 300px;
+margin: 10px;
+border: 2px solid rgb(126, 14, 201); /* choose a color */
+display: block;
+margin: auto;
+}
