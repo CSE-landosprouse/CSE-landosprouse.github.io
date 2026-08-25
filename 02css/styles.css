@@ -11,7 +11,7 @@ body{
     padding: 5px;
     margin:auto;    /*center in the page*/
     border-radius: 5px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 }
 
 /* Navigation */
