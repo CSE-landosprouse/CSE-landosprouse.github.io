@@ -36,7 +36,7 @@ body {
 }
 
 #main-nav a {
-    color: white;
+    color: darkslategray;
     text-decoration: none;  /* Remove underline */
 }
 
