@@ -2,77 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSCE 242</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #e8f1f8;
-            color: #172b4d;
-            margin: 0;
-        }
-
-        #content {
-            background-color: white;
-            width: 80%;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px #9db4c0;
-        }
-
-        h1 {
-            color: #c62828;
-            text-align: center;
-        }
-
-        h2 {
-            color: #1565c0;
-        }
-
-        #repo-link {
-            color: #c62828;
-            font-weight: bold;
-        }
-
-        #assignments a {
-            color: #1565c0;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        #assignments a:hover {
-            color: #c62828;
-        }
-
-        li {
-            margin: 12px 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landon Sprouse | CSCE 242</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="content">
+    <header id="main-header">
         <h1>CSCE 242: Client-Server Computing</h1>
+        <p class="site-name">Landon Sprouse</p>
+    </header>
 
-        <h2>Assignments</h2>
+    <main id="main-content">
+        <section class="content-section">
+            <h2>Assignments</h2>
 
-        <p>
-            This page contains my work for CSCE 242. 
-        </p>
+            <div class="card-container">
+                <article class="card">
+                    <h3>
+                        <a href="assignments/assignment1/index.html">
+                            Assignment 1 - Basic HTML
+                        </a>
+                    </h3>
 
-        <p>
-            <a id="repo-link"
-               href="https://github.com/CSE-landosprouse/CSE-landosprouse.github.io/tree/main/csce242"
-               target="_blank">
-                View my GitHub code repository
-            </a>
-        </p>
+                    <a href="assignments/assignment1/index.html">
+                        <img src="images/assignment1.png" alt="Screenshot of Assignment 1">
+                    </a>
 
-        <ul id="assignments">
-            <li><a href="assignments/assignment1/index.html">Assignment 1</a></li>
-            <li><a href="assignments/assignment2/index.html">Assignment 2</a></li>
-            <li><a href="assignments/assignment3/index.html">Assignment 3 - Flexbox</a></li>
-        </ul>
-    </div>
+                    <p>
+                        In this assignment, I learned the basic structure of an
+                        HTML webpage. I practiced adding headings, paragraphs,
+                        images, lists, and links.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>
+                        <a href="assignments/assignment2/index.html">
+                            Assignment 2 - Basic CSS
+                        </a>
+                    </h3>
+
+                    <a href="assignments/assignment2/index.html">
+                        <img src="images/assignment2.png" alt="Screenshot of Assignment 2">
+                    </a>
+
+                    <p>
+                        In this assignment, I used CSS to make a webpage look
+                        better. I added colors, spacing, fonts, and organized
+                        the content into sections.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>
+                        <a href="assignments/assignment3/index.html">
+                            Assignment 3 - Flexbox
+                        </a>
+                    </h3>
+
+                    <a href="assignments/assignment3/index.html">
+                        <img src="images/assignment3.png" alt="Screenshot of Assignment 3">
+                    </a>
+
+                    <p>
+                        In this assignment, I used Flexbox to organize a webpage
+                        into columns. I also used a media query so the layout
+                        changes into one column on smaller screens.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Projects</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>
+                        <a href="projects/basketball-website-topic.pdf" target="_blank">
+                            Basketball Website Project Topic
+                        </a>
+                    </h3>
+
+                    <a href="projects/basketball-website-topic.pdf" target="_blank">
+                        <img src="images/basketball-topic.png" alt="Basketball website project topic">
+                    </a>
+
+                    <p>
+                        My website project will be about basketball. It will
+                        include information about teams, players, games, and
+                        basketball news for fans to explore.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; Landon Sprouse | CSCE 242</p>
+    </footer>
 </body>
 </html>
