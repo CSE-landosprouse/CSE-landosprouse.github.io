@@ -51,6 +51,27 @@ body {
     background-color:aquamarine;
 }
 
+/* footer links */
+
+#footer-links {
+    background: maroon;
+    color: white;
+}
+
+#footer-links a {
+    color: white;
+}
+
+/* footer copy */
+#footer-copy {
+    background: black;
+    color: white;
+}
+
+#footer-copy a {
+    color: white;
+}
+
 /* Navigation */
 #main-nav ul, #quick-links {
     list-style-type: none;
