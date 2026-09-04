@@ -1,9 +1,237 @@
+Yes—what you described is the **parallax effect**, and the assignment says you can ignore it. We will use normal still images that stay in place as the user scrolls.
+
+Replace both files below. This version matches your screenshots much more closely: black header, garnet navigation, full-width image areas, floating garnet content boxes, circular quote image, three cards, gray Stay Connected section, and the two-part footer.
+
+Keep your four image files as:
+
+```text
+images/hero.svg
+images/education.svg
+images/research.svg
+images/centers.svg
+```
+
+## Replace `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="top-links">
+        <div class="page-width">
+          <a href="#">Lorem</a>
+          <a href="#">Ipsum</a>
+          <a href="#">Dolor</a>
+          <a href="#">Sit</a>
+          <a href="#">Amet</a>
+          <a href="#">Consectetur ›</a>
+        </div>
+      </div>
+
+      <div class="main-header">
+        <div class="page-width header-content">
+          <div class="usc-name">
+            <div class="logo-box">✦</div>
+            <p>Lorem Ipsum<br><span>Dolor Sit</span></p>
+          </div>
+
+          <h1>Lorem Ipsum Dolor</h1>
+        </div>
+      </div>
+
+      <nav>
+        <div class="page-width nav-content">
+          <a href="#">Lorem Ipsum</a>
+          <a href="#">Dolor Sit</a>
+          <a href="#">Amet Consectetur</a>
+          <a href="#">Adipiscing Elit</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-image">
+        <img src="images/hero.svg" alt="Lorem ipsum placeholder">
+      </section>
+
+      <section class="intro">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          posuere, justo vel finibus eleifend, nibh eros hendrerit velit, at
+          pellentesque felis ipsum vel lectus.
+        </p>
+      </section>
+
+      <section class="feature education-feature">
+        <img src="images/education.svg" alt="Lorem ipsum placeholder">
+
+        <div class="feature-box right-box">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            vitae nunc eu sapien pretium faucibus. Nam posuere sagittis
+            imperdiet.
+          </p>
+          <a class="black-button" href="#">Lorem Ipsum »</a>
+        </div>
+      </section>
+
+      <section class="quote-section page-width">
+        <img src="images/education.svg" alt="Lorem ipsum placeholder">
+
+        <div class="quote-text">
+          <p class="quotation-mark">“</p>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            euismod augue nec erat egestas, sit amet accumsan lectus consequat.
+            Pellentesque habitant morbi tristique senectus.
+          </blockquote>
+          <p class="quote-name">Lorem Ipsum Dolor</p>
+        </div>
+      </section>
+
+      <section class="feature research-feature">
+        <img src="images/research.svg" alt="Lorem ipsum placeholder">
+
+        <div class="feature-box left-box">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            dignissim vulputate nunc, sed tristique elit viverra in.
+          </p>
+          <a class="black-button" href="#">Lorem Ipsum »</a>
+        </div>
+      </section>
+
+      <section class="cards-section page-width">
+        <a class="info-card gray-card" href="#">
+          <img src="images/centers.svg" alt="Lorem ipsum placeholder">
+          <h3>Lorem Ipsum Dolor »</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </a>
+
+        <a class="info-card" href="#">
+          <img src="images/hero.svg" alt="Lorem ipsum placeholder">
+          <h3>Lorem Ipsum »</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </a>
+
+        <a class="info-card" href="#">
+          <img src="images/research.svg" alt="Lorem ipsum placeholder">
+          <h3>Lorem Ipsum »</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </a>
+      </section>
+
+      <section class="feature centers-feature">
+        <img src="images/centers.svg" alt="Lorem ipsum placeholder">
+
+        <div class="feature-box left-box">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            lobortis arcu eu lorem blandit, non viverra tellus porttitor.
+          </p>
+          <a class="black-button" href="#">Lorem Ipsum »</a>
+        </div>
+      </section>
+
+      <section class="stay-connected">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="connection-buttons">
+          <a href="#">Lorem Ipsum »</a>
+          <a href="#">Dolor Sit »</a>
+          <a href="#">Amet Consectetur »</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="school-footer page-width">
+        <div class="school-info">
+          <h2>Lorem Ipsum Dolor »</h2>
+          <a class="black-button" href="#">Lorem Ipsum »</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Lorem Ipsum »</a>
+          <a href="#">Dolor Sit »</a>
+          <a href="#">Amet Consectetur »</a>
+          <a href="#">Adipiscing Elit »</a>
+          <a href="#">Sed Do »</a>
+          <a href="#">Eiusmod »</a>
+        </div>
+
+        <div class="address">
+          <p>
+            <strong>Lorem Ipsum Dolor</strong><br>
+            Lorem ipsum dolor sit amet<br>
+            Consectetur, SC 29209
+          </p>
+        </div>
+      </section>
+
+      <section class="university-footer">
+        <div class="page-width">
+          <div class="university-title">
+            <div class="footer-logo">✦</div>
+            <h2>Lorem Ipsum<br><span>Dolor Sit</span></h2>
+          </div>
+
+          <div class="footer-columns">
+            <div>
+              <h3>Lorem Ipsum</h3>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum</a>
+              <a href="#">Dolor</a>
+              <a href="#">Sit Amet</a>
+            </div>
+
+            <div>
+              <h3>Consectetur</h3>
+              <a href="#">Adipiscing</a>
+              <a href="#">Elit Sed</a>
+              <a href="#">Do Eiusmod</a>
+              <a href="#">Tempor</a>
+            </div>
+
+            <div>
+              <h3>Incididunt</h3>
+              <a href="#">Ut Labore</a>
+              <a href="#">Et Dolore</a>
+              <a href="#">Magna</a>
+              <a href="#">Aliqua</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
+```
+
+## Replace `styles.css`
+
+```css
 :root {
   --garnet: #73000a;
-  --dark-garnet: #570008;
-  --black: #1b1b1b;
-  --light-gray: #ececec;
-  --medium-gray: #666666;
+  --black: #000000;
+  --gray: #eeeeee;
+  --dark-text: #111111;
   --white: #ffffff;
 }
 
@@ -13,9 +241,13 @@
 
 body {
   margin: 0;
-  color: var(--black);
+  color: var(--dark-text);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 a {
@@ -23,314 +255,465 @@ a {
   text-decoration: none;
 }
 
-.content-wrap {
-  width: 90%;
-  max-width: 1200px;
+.page-width {
+  width: 88%;
+  max-width: 1700px;
   margin: auto;
 }
 
 /* Header */
-.utility-bar {
+.top-links {
   background: var(--black);
   color: var(--white);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
-.utility-content {
+.top-links .page-width {
+  display: flex;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+.top-links a:not(:last-child)::after {
+  margin-left: 14px;
+  content: "|";
+}
+
+.main-header {
+  color: var(--white);
+  background: var(--black);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 110px;
+}
+
+.usc-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-box,
+.footer-logo {
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.usc-name p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.usc-name span {
+  font-size: 1.8rem;
+  text-transform: none;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+}
+
+nav {
+  color: var(--white);
+  background: var(--garnet);
+}
+
+.nav-content {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
-  padding: 8px 0;
-}
-
-.school-header {
-  background: var(--white);
-  padding: 22px 0 16px;
-}
-
-.university-name {
-  color: var(--garnet);
-  font-size: 1.05rem;
+  gap: 60px;
+  padding: 17px 0;
+  font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.school-header h1 {
-  margin: 4px 0 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.4rem;
-  font-weight: normal;
-}
-
-nav {
-  background: var(--garnet);
-  color: var(--white);
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 15px 0;
-  font-weight: bold;
-}
-
-/* Hero */
-.hero {
-  position: relative;
-  height: 580px;
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
+/* Main content */
+.hero-image img {
+  height: 750px;
   object-fit: cover;
 }
 
-.hero-overlay {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 85px 0 55px;
-  color: var(--white);
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
+.intro {
+  max-width: 1030px;
+  margin: auto;
+  padding: 55px 30px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.8;
 }
 
-.hero-overlay h2,
-.intro h2,
-.split-text h2,
-.connect-section h2,
-footer h2 {
-  margin-top: 0;
+.feature {
+  position: relative;
+  min-height: 600px;
+  margin-bottom: 105px;
+}
+
+.feature > img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.feature-box {
+  position: absolute;
+  z-index: 1;
+  width: 49%;
+  max-width: 940px;
+  padding: 45px 50px 48px;
+  color: var(--white);
+  background: var(--garnet);
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.22);
+}
+
+.feature-box h2,
+.stay-connected h2 {
+  margin: 0 0 20px;
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+.feature-box p {
+  max-width: 760px;
+  margin-bottom: 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.right-box {
+  top: 20px;
+  right: 4.5%;
+}
+
+.left-box {
+  bottom: -45px;
+  left: 4.5%;
+}
+
+.black-button {
+  display: inline-block;
+  padding: 15px 26px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  background: var(--black);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Quote */
+.quote-section {
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  padding: 20px 0 110px;
+}
+
+.quote-section img {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-text {
+  position: relative;
+  flex: 1;
+}
+
+.quotation-mark {
+  position: absolute;
+  top: -95px;
+  left: -45px;
+  margin: 0;
+  color: #d8d8d8;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.4rem;
+  font-size: 10rem;
+}
+
+blockquote {
+  position: relative;
+  margin: 0;
+  color: var(--garnet);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.65;
+}
+
+.quote-name {
+  margin: 22px 0 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Cards */
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  padding: 10px 0 75px;
+}
+
+.info-card {
+  min-height: 520px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.info-card img {
+  height: 330px;
+  object-fit: cover;
+}
+
+.info-card h3 {
+  margin: 16px 20px 10px;
+  color: var(--garnet);
+  font-size: 1.65rem;
   line-height: 1.15;
 }
 
-.hero-overlay p {
-  max-width: 650px;
-  font-size: 1.1rem;
+.info-card p {
+  margin: 0 20px 25px;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 11px 22px;
-  font-weight: bold;
+.gray-card {
+  background: var(--gray);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
 }
 
-.light-button {
-  color: var(--black);
-  background: var(--white);
-}
-
-.dark-button {
-  color: var(--white);
-  background: var(--garnet);
-}
-
-/* Main sections */
-.intro {
-  max-width: 900px;
-  padding: 85px 0;
+/* Stay connected */
+.stay-connected {
+  padding: 70px 20px 105px;
+  background: var(--gray);
   text-align: center;
 }
 
-.intro p {
-  font-size: 1.15rem;
+.stay-connected h2 {
+  color: var(--garnet);
+  font-size: 4rem;
 }
 
-.split-section {
-  display: flex;
-  min-height: 510px;
+.stay-connected p {
+  font-size: 1.25rem;
 }
 
-.split-section img,
-.split-text {
-  width: 50%;
-}
-
-.split-section img {
-  object-fit: cover;
-}
-
-.split-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 70px 9%;
-}
-
-.garnet-background {
-  color: var(--white);
-  background: var(--garnet);
-}
-
-.gray-background {
-  background: var(--light-gray);
-}
-
-.black-background {
-  color: var(--white);
-  background: var(--black);
-}
-
-.reverse {
-  flex-direction: row-reverse;
-}
-
-.quote-section {
-  max-width: 950px;
-  margin: auto;
-  padding: 85px 25px;
-  text-align: center;
-}
-
-.quote {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.8rem;
-  font-style: italic;
-}
-
-.quote-author {
-  color: var(--medium-gray);
-  font-weight: bold;
-}
-
-.cards-section {
-  padding: 75px 0;
-  background: var(--light-gray);
-}
-
-.cards {
-  display: flex;
-  gap: 25px;
-}
-
-.card {
-  flex: 1;
-  min-height: 200px;
-  padding: 30px;
-  color: var(--white);
-  background: var(--garnet);
-}
-
-.card h3 {
-  margin-top: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.7rem;
-}
-
-.connect-section {
-  padding: 85px 0;
-  text-align: center;
-}
-
-.connect-links {
+.connection-buttons {
   display: flex;
   justify-content: center;
-  gap: 18px;
-  margin-top: 30px;
+  gap: 70px;
+  margin-top: 55px;
 }
 
-.connect-links a {
-  padding: 13px 20px;
+.connection-buttons a {
+  min-width: 230px;
+  padding: 17px 20px;
+  border: 2px solid var(--white);
   color: var(--white);
   background: var(--garnet);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Footer */
-footer {
-  padding: 55px 0;
-  color: var(--white);
-  background: var(--black);
+.school-footer {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.8fr;
+  gap: 45px;
+  padding: 55px 0 35px;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.footer-content h2 {
-  font-size: 1.8rem;
+.school-footer h2 {
+  margin-top: 0;
+  color: var(--garnet);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
 }
 
 .footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 35px;
+  padding: 6px 20px;
+  border-right: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  color: var(--garnet);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.address {
+  line-height: 1.8;
+}
+
+.university-footer {
+  padding: 40px 0 70px;
+  color: var(--white);
+  background: var(--garnet);
+}
+
+.university-title {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 12px 24px;
-  max-width: 360px;
+  align-items: center;
+  gap: 16px;
+}
+
+.university-title h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.university-title h2 span {
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 2fr 1.3fr 0.7fr;
+  gap: 40px;
+  margin-top: 45px;
+}
+
+.footer-columns h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--white);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-columns a {
+  display: block;
+  margin: 14px 0;
+  font-weight: bold;
 }
 
 /* Small screens */
-@media (max-width: 700px) {
-  .utility-content {
+@media (max-width: 750px) {
+  .page-width {
+    width: 92%;
+  }
+
+  .top-links .page-width,
+  .nav-content {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 6px 15px;
+    gap: 10px 20px;
   }
 
-  .school-header h1 {
-    font-size: 2rem;
+  .main-header h1 {
+    font-size: 1.6rem;
+    text-align: right;
   }
 
-  /* The main navigation remains visible on small screens. */
-  .nav-links {
+  .usc-name {
+    display: none;
+  }
+
+  .header-content {
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 12px 0;
-    font-size: 0.9rem;
+    min-height: 80px;
   }
 
-  .hero {
-    height: 450px;
+  .nav-content {
+    font-size: 0.85rem;
   }
 
-  .hero-overlay {
-    padding: 60px 0 35px;
+  .hero-image img {
+    height: 380px;
   }
 
-  .hero-overlay h2,
-  .intro h2,
-  .split-text h2,
-  .connect-section h2 {
-    font-size: 2rem;
+  .intro {
+    padding: 40px 25px;
+    font-size: 1.15rem;
+    line-height: 1.7;
   }
 
-  .split-section,
-  .reverse {
+  .feature {
+    min-height: 600px;
+    margin-bottom: 65px;
+  }
+
+  .feature > img {
+    height: 400px;
+  }
+
+  .feature-box {
+    width: 90%;
+    padding: 32px 28px;
+  }
+
+  .feature-box h2,
+  .stay-connected h2 {
+    font-size: 2.5rem;
+  }
+
+  .feature-box p {
+    font-size: 1rem;
+  }
+
+  .right-box,
+  .left-box {
+    top: 300px;
+    right: 5%;
+    bottom: auto;
+    left: 5%;
+  }
+
+  .quote-section {
     flex-direction: column;
+    gap: 45px;
+    padding-bottom: 70px;
   }
 
-  .split-section img,
-  .split-text {
-    width: 100%;
+  .quote-section img {
+    width: 250px;
+    height: 250px;
   }
 
-  .split-section img {
-    height: 320px;
+  blockquote {
+    font-size: 1.4rem;
   }
 
-  .split-text {
-    padding: 55px 10%;
+  .cards-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
   }
 
-  .cards {
-    flex-direction: column;
+  .info-card {
+    min-height: auto;
   }
 
-  .connect-links {
+  .connection-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
-  .footer-content {
-    flex-direction: column;
+  .school-footer,
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    border: 0;
+    padding: 25px 0;
   }
 }
