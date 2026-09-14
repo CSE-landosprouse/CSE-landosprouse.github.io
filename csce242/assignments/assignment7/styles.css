@@ -1,0 +1,158 @@
+:root {
+    --navy: #23395d;
+    --blue: #477998;
+    --pink: #d96c75;
+    --cream: #fff8d8;
+    --background: #f2f4e8;
+    --border: #9fc5c4;
+    --orange: #f4a261;
+}
+
+body {
+    margin: 0;
+    background: white;
+    color: var(--blue);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content {
+    position: relative;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background: var(--background);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: var(--blue);
+    font-size: 32px;
+}
+
+h2 {
+    margin: 18px 0;
+    color: var(--pink);
+    font-size: 22px;
+}
+
+h3 {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+#menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: var(--navy);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.column {
+    position: relative;
+    flex: 1;
+    min-height: 190px;
+    padding: 20px 10px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.column:nth-child(2) {
+    cursor: default;
+}
+
+label,
+select {
+    font-size: 16px;
+}
+
+#beverage-message {
+    min-height: 25px;
+    margin-top: 18px;
+    font-size: 17px;
+}
+
+#sun-area {
+    position: relative;
+    min-height: 120px;
+}
+
+#sun-button {
+    border: none;
+    background: transparent;
+    font-size: 82px;
+    cursor: pointer;
+}
+
+.sticker {
+    position: absolute;
+    font-size: 25px;
+}
+
+#speech-bubble {
+    position: relative;
+    width: 48px;
+    margin: 35px auto 0;
+    padding: 12px 0;
+    border: 2px solid var(--navy);
+    border-radius: 18px;
+    background: white;
+    color: var(--navy);
+    font-size: 18px;
+    box-shadow: 2px 2px 3px #999;
+}
+
+#speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 27px;
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid var(--navy);
+    border-bottom: 2px solid var(--navy);
+    background: white;
+    transform: rotate(45deg);
+}
+
+.hidden {
+    display: none;
+}
+
+#credit {
+    margin-bottom: 0;
+    color: var(--blue);
+}
+
+@media (max-width: 700px) {
+    #main-content {
+        width: 100%;
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    #columns {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .column {
+        min-height: 170px;
+    }
+}

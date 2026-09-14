@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 - Introduction to JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-content">
+        <button id="menu-button" aria-label="Open menu">•••</button>
+
+        <h1>Assignment 7</h1>
+        <h2>Introduction to JavaScript</h2>
+
+        <section id="columns">
+            <article id="speech-column" class="column">
+                <h3>Speech</h3>
+                <div id="speech-bubble" class="hidden">Hi</div>
+            </article>
+
+            <article class="column">
+                <h3>Beverage</h3>
+
+                <label for="beverage-select">Pick your morning beverage:</label>
+
+                <select id="beverage-select">
+                    <option value="Coffee">Coffee</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Orange Juice">Orange Juice</option>
+                    <option value="Water">Water</option>
+                </select>
+
+                <p id="beverage-message"></p>
+            </article>
+
+            <article class="column">
+                <h3>Add a Sticker</h3>
+
+                <div id="sun-area">
+                    <button id="sun-button" aria-label="Add a sun sticker">☀️</button>
+                </div>
+            </article>
+        </section>
+
+        <p id="credit">@landonsprouse.com</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
