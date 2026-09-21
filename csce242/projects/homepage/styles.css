@@ -1,0 +1,435 @@
+:root {
+    --navy: #0f172a;
+    --blue: #101a9b;
+    --orange: #ff6b16;
+    --white: #ffffff;
+    --light-gray: #eef2f7;
+    --medium-gray: #d9d9d9;
+    --footer-gray: #828282;
+    --text: #17213d;
+    --black-overlay: rgba(0, 0, 0, 0.48);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    min-height: 90px;
+    padding: 0 5%;
+    background-color: var(--navy);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 2vw, 30px);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav .active {
+    color: var(--orange);
+}
+
+.hero {
+    min-height: 655px;
+    padding: 70px 5%;
+    color: var(--white);
+    background-image:
+        linear-gradient(to right, var(--black-overlay), rgba(0, 0, 0, 0.08)),
+        url("images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.08;
+}
+
+.hero p {
+    margin: 0 0 25px;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    line-height: 1.35;
+}
+
+.button {
+    display: inline-block;
+    padding: 18px 28px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 800;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #e85608;
+    transform: translateY(-3px);
+}
+
+.scores-section,
+.teams-section,
+.players-section {
+    padding: 55px 5%;
+}
+
+.scores-section,
+.teams-section {
+    background-color: var(--light-gray);
+}
+
+.scores-section h2,
+.teams-section h2,
+.players-section h2 {
+    margin: 0 0 30px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.scores-section h2 {
+    color: var(--blue);
+}
+
+.score-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.score-card {
+    width: 240px;
+    min-height: 115px;
+    padding: 16px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.score-card p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.score-card p span {
+    float: right;
+}
+
+.score-card small {
+    margin-top: 18px;
+    font-weight: 700;
+}
+
+.featured-story {
+    min-height: 400px;
+    padding: 60px 5%;
+    color: var(--white);
+    background-image:
+        linear-gradient(to right, var(--black-overlay), rgba(0, 0, 0, 0.1)),
+        url("images/featured-story.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.featured-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    margin: 0 0 28px;
+    color: var(--orange);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.featured-story h2 {
+    margin: 0 0 25px;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+}
+
+.featured-story p:not(.eyebrow) {
+    margin: 0 0 30px;
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
+    line-height: 1.4;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 35px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-circle {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: var(--medium-gray);
+}
+
+.team h3 {
+    margin: 0 0 5px;
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+
+.team p {
+    margin: 0;
+    color: var(--blue);
+}
+
+.players-section {
+    background-color: var(--medium-gray);
+}
+
+.player-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(190px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+}
+
+.player-card {
+    overflow: hidden;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.player-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.player-card div {
+    min-height: 125px;
+    padding: 12px;
+}
+
+.player-card h3 {
+    margin: 0;
+    color: var(--blue);
+    font-size: 1.35rem;
+}
+
+.player-card p {
+    margin: 3px 0;
+    color: var(--blue);
+}
+
+.newsletter {
+    padding: 55px 5%;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.newsletter h2 {
+    margin: 0 0 20px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.newsletter > p {
+    margin: 0 0 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.newsletter label {
+    position: absolute;
+    left: -9999px;
+}
+
+.newsletter input {
+    width: min(330px, 100%);
+    padding: 16px 20px;
+    border: 0;
+    font-size: 1.05rem;
+}
+
+.newsletter button {
+    width: 64px;
+    height: 64px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e85608;
+}
+
+footer {
+    min-height: 285px;
+    padding: 45px 5% 20px;
+    background-color: var(--footer-gray);
+    color: var(--white);
+}
+
+footer h2 {
+    margin: 0 0 4px;
+    font-size: 2rem;
+}
+
+footer > p {
+    margin-top: 0;
+}
+
+.footer-links {
+    margin: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    font-weight: 700;
+}
+
+.footer-links a:hover {
+    color: var(--navy);
+}
+
+.copyright {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Tablet layout */
+@media (max-width: 850px) {
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .team-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phone layout */
+@media (max-width: 550px) {
+    header {
+        gap: 16px;
+    }
+
+    nav {
+        gap: 14px 18px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        min-height: 560px;
+        background-position: 65% center;
+    }
+
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .hero p br,
+    .featured-story p br {
+        display: none;
+    }
+
+    .score-card {
+        width: 100%;
+    }
+
+    .team-list,
+    .player-list {
+        grid-template-columns: 1fr;
+    }
+
+    .team-list {
+        gap: 40px;
+    }
+
+    .player-list {
+        max-width: 350px;
+    }
+
+    .newsletter form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        width: 100%;
+    }
+
+    .newsletter button {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        border-radius: 0;
+    }
+}
