@@ -1,0 +1,166 @@
+:root {
+    --background: #f3f3ea;
+    --blue: #5d929c;
+    --pink: #e78d94;
+    --border: #a8c7c8;
+    --text: #4f8892;
+    --white: #ffffff;
+    --dark: #292929;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 45px 20px;
+    background-color: var(--white);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+    position: relative;
+    width: min(850px, 100%);
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--background);
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: clamp(2.3rem, 5vw, 3.4rem);
+}
+
+h2 {
+    margin: 0 0 25px;
+    color: var(--pink);
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+#menu-toggle {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#main-nav {
+    margin-bottom: 22px;
+}
+
+#main-nav a {
+    color: var(--text);
+    font-size: 1.15rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-nav a:hover {
+    color: var(--pink);
+}
+
+#main-nav a:not(:last-child)::after {
+    margin-left: 8px;
+    color: var(--text);
+    content: "|";
+}
+
+.exercise-section {
+    min-height: 205px;
+    padding: 32px 20px;
+    border: 1px solid var(--border);
+    background-color: var(--white);
+}
+
+.exercise-section h3 {
+    margin: 0 0 22px;
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+.exercise-section label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+#days-missed {
+    width: 200px;
+    padding: 7px;
+    border: 1px solid var(--text);
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+#deduction-result,
+#attendance-message,
+#days-left,
+#semester-message {
+    min-height: 20px;
+    margin: 14px 0 0;
+    font-size: 1.05rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.website-credit {
+    margin: 24px 0 0;
+    font-size: 1.05rem;
+}
+
+/* Small-screen toggle menu */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .page-container {
+        padding: 30px 16px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        margin: 25px 0 20px;
+        padding: 12px;
+        background-color: #fffde0;
+        text-align: left;
+    }
+
+    #main-nav.show {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #main-nav a {
+        width: fit-content;
+    }
+
+    #main-nav a:not(:last-child)::after {
+        content: "";
+    }
+
+    .exercise-section {
+        padding: 28px 14px;
+    }
+
+    #days-missed {
+        width: 100%;
+    }
+}

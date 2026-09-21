@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 - If Statements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="page-container">
+        <button id="menu-toggle" aria-label="Open navigation menu">•••</button>
+
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+
+        <nav id="main-nav">
+            <a href="#" id="exercise-one-link">Exercise 1</a>
+            <a href="#" id="exercise-two-link">Exercise 2</a>
+        </nav>
+
+        <section id="exercise-one" class="exercise-section">
+            <h3>Missing Class Point Deductions</h3>
+
+            <label for="days-missed">
+                How many days do you intend to miss class?
+            </label>
+
+            <input id="days-missed" type="number" min="0" max="25">
+
+            <p id="deduction-result"></p>
+            <p id="attendance-message"></p>
+        </section>
+
+        <section id="exercise-two" class="exercise-section hidden">
+            <h3>End of Semester Counter</h3>
+
+            <p id="days-left"></p>
+            <p id="semester-message"></p>
+        </section>
+
+        <p class="website-credit">@portiaplante.com</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
