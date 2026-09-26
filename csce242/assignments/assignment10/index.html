@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 - Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <section id="assignment-box">
+            <h1>Assignment 10</h1>
+            <h2>Arrays</h2>
+
+            <div id="selection-area">
+                <label for="destination-type">Pick Your Destination Type</label>
+
+                <select id="destination-type">
+                    <option value="">Select</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="beaches">Beaches</option>
+                </select>
+            </div>
+
+            <div id="destination-links"></div>
+
+            <section id="map-container" class="hidden">
+                <iframe
+                    id="map"
+                    title="Selected destination map"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <footer>
+                <p>@landonsprouse.com</p>
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
