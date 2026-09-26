@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Court | NBA Basketball</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main navigation -->
+    <header>
+        <a class="logo" href="index.html">FULL COURT</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+    ☰
+        </button>
+
+        <nav id="main-nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="scores.html">Scores</a>
+            <a href="teams.html">Teams</a>
+            <a href="players.html">Players</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="news.html">News</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main hero section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>NBA BASKETBALL,<br>ALL IN ONE PLACE.</h1>
+
+                <p>
+                    Follow NBA scores, breaking news, player updates,<br>
+                    and the biggest moments from around the league.
+                </p>
+
+                <a class="button" href="scores.html">EXPLORE SCORES</a>
+            </div>
+        </section>
+
+        <!-- NBA score preview -->
+        <section class="scores-section">
+            <h2>NBA SCOREBOARD</h2>
+
+            <div class="score-list">
+                <article class="score-card">
+                    <div>
+                        <p>LAKERS <span>112</span></p>
+                        <p>WARRIORS <span>108</span></p>
+                    </div>
+                    <small>FINAL</small>
+                </article>
+
+                <article class="score-card">
+                    <div>
+                        <p>CELTICS <span>104</span></p>
+                        <p>KNICKS <span>99</span></p>
+                    </div>
+                    <small>FINAL</small>
+                </article>
+
+                <article class="score-card">
+                    <div>
+                        <p>NUGGETS <span>118</span></p>
+                        <p>THUNDER <span>121</span></p>
+                    </div>
+                    <small>FINAL</small>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured NBA article -->
+        <section class="featured-story">
+            <div class="featured-content">
+                <p class="eyebrow">NBA FEATURED STORY</p>
+                <h2>The League's Biggest Stars Are Ready for Another Season</h2>
+
+                <p>
+                    From championship contenders to rising young talent,<br>
+                    the NBA never runs out of must-watch moments.
+                </p>
+
+                <a class="button" href="news-detail.html">READ STORY →</a>
+            </div>
+        </section>
+
+        <!-- Top NBA teams -->
+<section class="teams-section">
+    <h2>Top NBA Teams</h2>
+
+    <div class="team-list">
+        <article class="team">
+            <a href="teams.html">
+                <img class="home-team-logo"
+                     src="https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg"
+                     alt="Boston Celtics logo">
+                <h3>Boston Celtics</h3>
+                <p>Eastern Conference</p>
+            </a>
+        </article>
+
+        <article class="team">
+            <img class="home-team-logo"
+                 src="https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg"
+                 alt="Oklahoma City Thunder logo">
+            <h3>Oklahoma City Thunder</h3>
+            <p>Western Conference</p>
+        </article>
+
+        <article class="team">
+            <img class="home-team-logo"
+                 src="https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg"
+                 alt="Denver Nuggets logo">
+            <h3>Denver Nuggets</h3>
+            <p>Western Conference</p>
+        </article>
+
+        <article class="team">
+            <img class="home-team-logo"
+                 src="https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg"
+                 alt="New York Knicks logo">
+            <h3>New York Knicks</h3>
+            <p>Eastern Conference</p>
+        </article>
+    </div>
+</section>
+
+        <!-- NBA player preview -->
+<section class="players-section">
+    <h2>NBA Star Players</h2>
+
+    <div class="player-list">
+        <article class="player-card">
+            <a href="players.html">
+                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203999.png"
+                     alt="Nikola Jokić">
+                <div>
+                    <h3>Nikola Jokić</h3>
+                    <p>Denver Nuggets</p>
+                    <p>Center</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="player-card">
+            <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628983.png"
+                 alt="Shai Gilgeous-Alexander">
+            <div>
+                <h3>Shai Gilgeous-Alexander</h3>
+                <p>Oklahoma City Thunder</p>
+                <p>Guard</p>
+            </div>
+        </article>
+
+        <article class="player-card">
+            <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628369.png"
+                 alt="Jayson Tatum">
+            <div>
+                <h3>Jayson Tatum</h3>
+                <p>Boston Celtics</p>
+                <p>Forward</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+        <!-- Newsletter section -->
+        <section class="newsletter">
+            <h2>Never Miss A Bucket</h2>
+            <p>Get NBA scores, stories, and basketball updates delivered to your inbox.</p>
+
+            <form>
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="Enter Your Email">
+                <button type="submit">Sign<br>Up</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Full Court</h2>
+        <p>NBA news, scores, teams, and players.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="players.html">Players</a>
+            <a href="news.html">News</a>
+        </div>
+
+        <p class="copyright">© 2026 Full Court. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

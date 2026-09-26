@@ -1,0 +1,914 @@
+/* Full Court color variables */
+:root {
+    --navy: #0f172a;
+    --blue: #101a9b;
+    --orange: #ff6b16;
+    --orange-hover: #e85608;
+    --white: #ffffff;
+    --light-gray: #eef2f7;
+    --medium-gray: #d9d9d9;
+    --footer-gray: #828282;
+    --text: #17213d;
+    --black-overlay: rgba(0, 0, 0, 0.48);
+    --black-overlay-light: rgba(0, 0, 0, 0.08);
+
+    /* NBA team accent colors */
+    --celtics-green: #007a33;
+    --knicks-blue: #006bb6;
+    --cavaliers-wine: #6f263d;
+    --bucks-green: #00471b;
+    --thunder-blue: #007ac1;
+    --nuggets-navy: #0e2240;
+    --lakers-purple: #552583;
+    --timberwolves-blue: #236192;
+}
+
+/* Basic page styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Main navigation */
+header {
+    min-height: 90px;
+    padding: 0 5%;
+    background-color: var(--navy);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 2vw, 30px);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav .active {
+    color: var(--orange);
+}
+
+/* Homepage hero */
+.hero {
+    min-height: 655px;
+    padding: 70px 5%;
+    color: var(--white);
+    background-image:
+        linear-gradient(to right, var(--black-overlay), var(--black-overlay-light)),
+        url("images/hero2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.08;
+}
+
+.hero p {
+    margin: 0 0 25px;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    line-height: 1.35;
+}
+
+/* Orange buttons */
+.button {
+    display: inline-block;
+    padding: 18px 28px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 800;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: var(--orange-hover);
+    transform: translateY(-3px);
+}
+
+/* Homepage sections */
+.scores-section,
+.teams-section,
+.players-section {
+    padding: 55px 5%;
+}
+
+.scores-section,
+.teams-section {
+    background-color: var(--light-gray);
+}
+
+.scores-section h2,
+.teams-section h2,
+.players-section h2 {
+    margin: 0 0 30px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.scores-section h2 {
+    color: var(--blue);
+}
+
+/* NBA score cards */
+.score-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.score-card {
+    width: 240px;
+    min-height: 115px;
+    padding: 16px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.score-card p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.score-card p span {
+    float: right;
+}
+
+.score-card small {
+    margin-top: 18px;
+    color: var(--orange);
+    font-weight: 800;
+}
+
+/* Featured story */
+.featured-story {
+    min-height: 400px;
+    padding: 60px 5%;
+    color: var(--white);
+    background-image:
+        linear-gradient(to right, var(--black-overlay), var(--black-overlay-light)),
+        url("images/featured-story2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.featured-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    margin: 0 0 28px;
+    color: var(--orange);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.featured-story h2 {
+    margin: 0 0 25px;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+}
+
+.featured-story p:not(.eyebrow) {
+    margin: 0 0 30px;
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
+    line-height: 1.4;
+}
+
+/* Homepage team cards */
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 35px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-circle {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: var(--medium-gray);
+}
+
+.team h3 {
+    margin: 0 0 5px;
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+
+.team p {
+    margin: 0;
+    color: var(--blue);
+}
+
+/* Homepage player cards */
+.players-section {
+    background-color: var(--medium-gray);
+}
+
+.player-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(190px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+}
+
+.player-card {
+    overflow: hidden;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.player-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.player-card div {
+    min-height: 125px;
+    padding: 12px;
+}
+
+.player-card h3 {
+    margin: 0;
+    color: var(--blue);
+    font-size: 1.35rem;
+}
+
+.player-card p {
+    margin: 3px 0;
+    color: var(--blue);
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 55px 5%;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.newsletter h2 {
+    margin: 0 0 20px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.newsletter > p {
+    margin: 0 0 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.newsletter label {
+    position: absolute;
+    left: -9999px;
+}
+
+.newsletter input {
+    width: min(330px, 100%);
+    padding: 16px 20px;
+    border: 0;
+    font-size: 1.05rem;
+}
+
+.newsletter button {
+    width: 64px;
+    height: 64px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--orange-hover);
+}
+
+/* Inner-page heading */
+.page-banner {
+    padding: 80px 5%;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.page-banner h1 {
+    margin: 0 0 15px;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.page-banner p:not(.eyebrow) {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Scores page */
+.page-scores {
+    min-height: 390px;
+}
+
+.page-scores .score-list {
+    justify-content: center;
+}
+
+.page-callout {
+    padding: 70px 5%;
+    background-color: var(--medium-gray);
+    text-align: center;
+}
+
+.page-callout h2 {
+    margin: 0 0 15px;
+    color: var(--blue);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.page-callout p {
+    margin: 0 0 28px;
+    font-size: 1.15rem;
+}
+
+/* NBA teams page */
+.conference-section {
+    padding: 65px 5%;
+    background-color: var(--light-gray);
+}
+
+.alternate-section {
+    background-color: var(--white);
+}
+
+.conference-section h2 {
+    margin: 0 0 30px;
+    color: var(--blue);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.team-card {
+    padding: 28px 18px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.alternate-section .team-card {
+    background-color: var(--light-gray);
+}
+
+.team-card h3 {
+    margin: 16px 0 8px;
+    color: var(--blue);
+    font-size: 1.25rem;
+}
+
+.team-card p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.team-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.green {
+    background-color: var(--celtics-green);
+}
+
+.blue {
+    background-color: var(--knicks-blue);
+}
+
+.wine {
+    background-color: var(--cavaliers-wine);
+}
+
+.red {
+    background-color: var(--bucks-green);
+}
+
+.thunder {
+    background-color: var(--thunder-blue);
+}
+
+.navy-logo {
+    background-color: var(--nuggets-navy);
+}
+
+.purple {
+    background-color: var(--lakers-purple);
+}
+
+.gold {
+    background-color: var(--blue);
+}
+
+/* NBA players page */
+.player-page-section {
+    padding: 65px 5%;
+    background-color: var(--medium-gray);
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nba-player-card {
+    padding: 30px 20px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.nba-player-card h2 {
+    margin: 18px 0 8px;
+    color: var(--blue);
+    font-size: 1.4rem;
+}
+
+.nba-player-card p {
+    margin: 5px 0;
+}
+
+.player-position {
+    color: var(--orange);
+    font-weight: 800;
+}
+
+.player-number {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.navy-number {
+    background-color: var(--nuggets-navy);
+}
+
+.thunder-number {
+    background-color: var(--thunder-blue);
+}
+
+.green-number {
+    background-color: var(--celtics-green);
+}
+
+.purple-number {
+    background-color: var(--lakers-purple);
+}
+
+.blue-number {
+    background-color: var(--timberwolves-blue);
+}
+
+.bucks-number {
+    background-color: var(--bucks-green);
+}
+
+/* Footer */
+footer {
+    min-height: 285px;
+    padding: 45px 5% 20px;
+    background-color: var(--footer-gray);
+    color: var(--white);
+}
+
+footer h2 {
+    margin: 0 0 4px;
+    font-size: 2rem;
+}
+
+footer > p {
+    margin-top: 0;
+}
+
+.footer-links {
+    margin: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    font-weight: 700;
+}
+
+.footer-links a:hover {
+    color: var(--navy);
+}
+
+.copyright {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Tablet layout */
+@media (max-width: 850px) {
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .team-list,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-list,
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phone layout */
+@media (max-width: 550px) {
+    header {
+        gap: 16px;
+    }
+
+    nav {
+        gap: 14px 18px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        min-height: 560px;
+        background-position: 65% center;
+    }
+
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .hero p br,
+    .featured-story p br {
+        display: none;
+    }
+
+    .score-card {
+        width: 100%;
+    }
+
+    .team-list,
+    .team-grid,
+    .player-list,
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-list {
+        gap: 40px;
+    }
+
+    .player-list {
+        max-width: 350px;
+    }
+
+    .newsletter form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        width: 100%;
+    }
+
+    .newsletter button {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        border-radius: 0;
+    }
+}
+
+/* NBA schedule page */
+.schedule-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 65px 5%;
+}
+
+.schedule-day {
+    margin-bottom: 35px;
+}
+
+.schedule-day h2 {
+    margin: 0;
+    padding: 18px 22px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.game-row {
+    padding: 22px;
+    border-bottom: 1px solid var(--medium-gray);
+    background-color: var(--light-gray);
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr 130px;
+    align-items: center;
+    gap: 15px;
+}
+
+.game-row p,
+.game-row strong,
+.game-row span {
+    margin: 0;
+}
+
+.game-row strong {
+    color: var(--orange);
+    text-align: center;
+}
+
+.game-row span {
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-align: right;
+}
+
+/* Schedule page on phones */
+@media (max-width: 550px) {
+    .game-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .game-row span {
+        text-align: center;
+    }
+}
+
+/* NBA news page */
+.news-section {
+    padding: 65px 5%;
+    background-color: var(--light-gray);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-card {
+    min-height: 250px;
+    padding: 28px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.featured-news-card {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.news-category {
+    margin: 0 0 16px;
+    color: var(--orange);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.news-card h2 {
+    margin: 0 0 16px;
+    font-size: 1.45rem;
+    line-height: 1.25;
+}
+
+.news-card p:not(.news-category) {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.news-card span {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--orange);
+    font-weight: 800;
+}
+
+/* News page on tablets */
+@media (max-width: 850px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* News page on phones */
+@media (max-width: 550px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* News detail page */
+.article-header {
+    padding: 90px 5%;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.article-header h1 {
+    max-width: 950px;
+    margin: 0 auto 20px;
+    font-size: clamp(2.5rem, 5vw, 4.6rem);
+    line-height: 1.1;
+}
+
+.article-byline {
+    margin: 0;
+    color: var(--light-gray);
+    font-weight: 700;
+}
+
+.article-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 70px 5%;
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
+
+.article-content p {
+    margin: 0 0 28px;
+}
+
+.article-lead {
+    color: var(--blue);
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.article-content blockquote {
+    margin: 40px 0;
+    padding: 25px;
+    border-left: 8px solid var(--orange);
+    background-color: var(--light-gray);
+    color: var(--blue);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* Mobile navigation button */
+.menu-toggle {
+    display: none;
+    border: 0;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Hide and show navigation on phones */
+@media (max-width: 550px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+}
+
+/* NBA player photos */
+.nba-player-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Official NBA team logos */
+.team-logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* NBA team logos on the homepage */
+.home-team-logo {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 15px;
+    object-fit: contain;
+}
+
+/* Featured NBA news image */
+.featured-news-card {
+    background-image:
+        linear-gradient(to bottom, var(--black-overlay), var(--black-overlay)),
+        url("images/news-feature.jpg");
+    background-position: center;
+    background-size: cover;
+}
