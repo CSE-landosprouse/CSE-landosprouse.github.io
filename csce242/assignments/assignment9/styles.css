@@ -1,0 +1,74 @@
+/* CSS road art based on the Assignment 9 reference image */
+
+#road {
+    position: relative;
+    width: 100%;
+    max-width: 1035px;
+    height: 220px;
+    margin: 30px auto;
+    overflow: hidden;
+    background-color: #7fc94f; /* grass */
+}
+
+/* dark road pavement */
+#road::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 95px;
+    background-color: #353535;
+    border-top: 4px solid #d9d9d9;
+    border-bottom: 4px solid #d9d9d9;
+}
+
+/* dashed yellow center line */
+#road::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 97px;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(
+        to right,
+        #ffe35a 0 36px,
+        transparent 36px 65px
+    );
+}
+
+/* Each JavaScript-generated car */
+.car {
+    position: absolute;
+    z-index: 2;
+    width: 66px;
+    height: 31px;
+    border-radius: 7px 7px 4px 4px;
+    background-color: var(--car-color, #36b8ba);
+}
+
+/* Car roof/window */
+.car::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 13px;
+    left: 17px;
+    top: -9px;
+    border-radius: 10px 10px 2px 2px;
+    background-color: #a8ddff;
+}
+
+/* Two wheels */
+.car::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 10px;
+    bottom: -6px;
+    border-radius: 50%;
+    background-color: #666;
+    box-shadow: 36px 0 #666;
+}
