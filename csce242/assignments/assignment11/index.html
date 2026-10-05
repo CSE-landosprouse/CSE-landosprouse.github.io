@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Experiences</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vacations</h1>
+        <p>Vacation Experiences</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Find Your Next Getaway</h2>
+            <div id="vacation-list" class="vacation-list"></div>
+        </section>
+    </main>
+
+    <div id="vacation-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-button" aria-label="Close vacation details">
+                ×
+            </button>
+
+            <div class="modal-details">
+                <img id="modal-image" src="" alt="">
+                
+                <div class="modal-text">
+                    <h2 id="modal-title"></h2>
+                    <p><strong>Type:</strong> <span id="modal-type"></span></p>
+                    <p><strong>Description:</strong> <span id="modal-description"></span></p>
+                    <p><strong>Things to Do:</strong> <span id="modal-things-to-do"></span></p>
+                </div>
+            </div>
+
+            <iframe
+                id="modal-map"
+                title="Vacation location map"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>Vacation Experiences</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
