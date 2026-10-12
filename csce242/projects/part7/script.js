@@ -94,3 +94,52 @@ async function loadTeams() {
 if (easternTeams && westernTeams) {
     loadTeams();
 }
+
+/* Contact form submission */
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm && formStatus) {
+    contactForm.addEventListener("invalid", () => {
+        formStatus.textContent = "Please complete all required fields with a valid email address.";
+        formStatus.className = "form-status error-message";
+    }, true);
+
+    contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const submitButton = contactForm.querySelector("button[type='submit']");
+
+        formStatus.textContent = "Sending your message...";
+        formStatus.className = "form-status";
+        submitButton.disabled = true;
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("Form submission failed.");
+            }
+
+            formStatus.textContent = "Success! Your message has been sent.";
+            formStatus.className = "form-status success-message";
+            contactForm.reset();
+        } catch (error) {
+            formStatus.textContent = "Sorry, your message could not be sent. Please try again.";
+            formStatus.className = "form-status error-message";
+        } finally {
+            submitButton.disabled = false;
+
+            setTimeout(() => {
+                formStatus.textContent = "";
+                formStatus.className = "form-status";
+            }, 1000);
+        }
+    });
+}
