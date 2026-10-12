@@ -1,0 +1,74 @@
+[
+  {
+    "_id": 1,
+    "name": "Los Angeles Lakers",
+    "city": "Los Angeles, CA",
+    "conference": "Western Conference",
+    "championships": 17,
+    "arena": "Crypto.com Arena",
+    "img_name": "images/lakers.jpg"
+  },
+  {
+    "_id": 2,
+    "name": "Boston Celtics",
+    "city": "Boston, MA",
+    "conference": "Eastern Conference",
+    "championships": 18,
+    "arena": "TD Garden",
+    "img_name": "images/celtics.jpg"
+  },
+  {
+    "_id": 3,
+    "name": "Golden State Warriors",
+    "city": "San Francisco, CA",
+    "conference": "Western Conference",
+    "championships": 7,
+    "arena": "Chase Center",
+    "img_name": "images/warriors.jpg"
+  },
+  {
+    "_id": 4,
+    "name": "Chicago Bulls",
+    "city": "Chicago, IL",
+    "conference": "Eastern Conference",
+    "championships": 6,
+    "arena": "United Center",
+    "img_name": "images/bulls.jpg"
+  },
+  {
+    "_id": 5,
+    "name": "Miami Heat",
+    "city": "Miami, FL",
+    "conference": "Eastern Conference",
+    "championships": 3,
+    "arena": "Kaseya Center",
+    "img_name": "images/heat.jpg"
+  },
+  {
+    "_id": 6,
+    "name": "Denver Nuggets",
+    "city": "Denver, CO",
+    "conference": "Western Conference",
+    "championships": 1,
+    "arena": "Ball Arena",
+    "img_name": "images/nuggets.jpg"
+  },
+  {
+    "_id": 7,
+    "name": "Milwaukee Bucks",
+    "city": "Milwaukee, WI",
+    "conference": "Eastern Conference",
+    "championships": 2,
+    "arena": "Fiserv Forum",
+    "img_name": "images/bucks.jpg"
+  },
+  {
+    "_id": 8,
+    "name": "Dallas Mavericks",
+    "city": "Dallas, TX",
+    "conference": "Western Conference",
+    "championships": 1,
+    "arena": "American Airlines Center",
+    "img_name": "images/mavericks.jpg"
+  }
+]
